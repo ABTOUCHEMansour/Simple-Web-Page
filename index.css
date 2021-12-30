@@ -1,0 +1,294 @@
+/*Start Global Rules*/
+*
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body 
+{
+    font-family: 'Roboto', sans-serif;
+}
+.container
+{
+    margin-left:auto;
+    margin-right:auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/*Small Screen*/
+@media(min-width:768px)
+{
+    .container
+    {
+        width:750px;
+    }
+}
+/*Middle Screen*/
+@media(min-width:992px)
+{
+    .container
+    {
+        width:970px;
+    }
+}
+/*Larger Screen*/
+@media(min-width:1200px)
+{
+    .container 
+    {
+        width:1170px; 
+    }
+}
+/*End Global Rules*/
+/*Start General Variables*/
+:root
+{
+    --first-color: #111;
+    --second-color: #FFF;
+}
+/*End General Variables*/
+/*Start Content*/
+.content
+{
+    background-image: url(sky3.jpg);
+    background-size:cover;
+    height: 100vh;
+    margin: 0;
+}
+@media(max-width: 425px)
+{
+    .content
+{
+    width: 600px;
+}
+}
+/*Start First_Info*/
+.content .container .first_info
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .first h3
+{
+    color: var(--first-color);
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 20px
+}
+
+.content .first h3 span
+{
+    color: var(--second-color);
+}
+/*End First_Info*/
+/*Start Navigation_Bar*/
+.content .navigation ul
+{
+    list-style: none;
+    text-transform: capitalize;
+    display: flex;
+    font-size: 17px;
+    color: var(--second-color);
+}
+
+.content .navigation ul li
+{
+    margin-left: 25px;
+    cursor: pointer;
+    padding-bottom: 3px;
+}
+
+.content .navigation ul li.one 
+{
+    border-bottom: 2px solid var(--first-color);
+}
+
+.content .navigation ul li a
+{
+    color: var(--first-color);
+    text-decoration: none;
+}
+
+.content .navigation ul li a:hover
+{
+    color:var(--second-color);
+    width: 0%;
+    transition: 0.3s;
+}
+/*End Navigation Bar*/
+/*Start Next_Info*/
+.content .next_info
+{
+    height: calc(100vh - 65px); 
+    position: relative;
+}
+/*Start First_*/
+.content .next_info .first_ 
+{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+@media(max-width: 425px)
+{
+    .content .next_info .first_ 
+{
+    top: 15%;
+}
+}
+@media(max-width: 768px)
+{
+    .content .next_info .first_
+    {
+        left: 25%;
+        text-align: center;
+    }
+}
+/*Start Text_1*/
+@media(max-width: 768px)
+{
+    .content .next_info .first_ .text_1
+{
+    width: 380px;
+}
+}
+
+.content .next_info .first_ .text_1 p
+{
+    font-size: 35px;
+    font-weight: 800;
+    color: var(--second-color);
+    margin: 0;
+}
+
+@media(max-width: 425px)
+{
+    .content .next_info .first_ .text_1 p
+    {
+        margin-right:20px;
+    }
+}
+.content .next_info .first_ .text_1 p span
+{
+    color: yellow;
+}
+/*End Text_1*/
+/*Start Text_2*/
+.content .next_info .first_ .text_2
+{
+    margin-top: 45px;
+    text-align: center;
+}
+@media(max-width:425px)
+{
+    .content .next_info .first_ .text_2 
+    {
+        transform: translateX(-15px);
+    }
+}
+.content .next_info .first_ .text_2 p
+{
+    margin-bottom: 10px;
+    color: black;
+    font-size: 17px;
+    padding-right: 80px;
+}
+
+@media(max-width: 768px)
+{
+    .content .next_info .first_ .text_2 p
+    {
+        margin-left: 45px;
+    }
+}
+.content .next_info .first_ .text_2 form
+{
+    position: absolute;
+    left: 40px;
+}
+@media(max-width: 768px)
+{
+    .content .next_info .first_ .text_2 form
+    {
+        position: absolute;
+        left: -8%;
+    }
+}
+.content .next_info .first_ .text_2 form input
+{
+    width: 450px;
+    border-color: var(--first-color);
+    border-width:1px;
+    padding: 10px;
+}
+
+.content .next_info .first_ .text_2 form input[placeholder="You@yourmail.com"]
+{
+    text-align: center;
+}
+
+.content .next_info .first_ .text_2 form button
+{
+    padding: 10px;
+    background-color: yellow;
+    font-weight: bold;
+    cursor: pointer;
+}
+@media(max-width: 768px)
+{
+    .content .next_info .first_ .text_2 form button
+    {
+        margin-top: 10px;
+    }
+}
+/*End Text_2*/
+/*End First_*/
+/*Start Icons*/
+.content .next_info .icons
+{
+    position: absolute;
+    top: 60%;
+    left: 37%;
+}
+
+@media(max-width: 768px)
+{
+    .content .next_info .icons
+    {
+        top: 80%;
+        left: 35%;
+    }
+}
+.content .next_info .icons img
+{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
+/*End Icons*/
+/*Start Last_Info*/
+.content .last_info
+{
+    padding-bottom: 50px;
+    background-color: #F6F6F6;
+}
+
+.content .last_info .text_3
+{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.content .last_info .text_3 p
+{
+    margin:0;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.6;
+}
+/*End Last_Info*/
+/*End Content*/
